@@ -1,0 +1,77 @@
+generated: '2026-10-20'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.ingestro.com/dp/release-notes/release-notes-self-hosted/
+sources:
+- https://docs.ingestro.com/dp/release-notes/release-notes-self-hosted/
+- https://docs.ingestro.com/dp/release-notes/release-notes-v1/
+- https://docs.ingestro.com/sdk/release-notes-self-hosted/
+- https://docs.ingestro.com/sdk/release-notes-v2/
+entries:
+- breaking: false
+  highlights:
+  - Fixed an issue where toasts were not dismissable by clicking on the toast
+  - Updated the error message logic to display the error message from the API instead
+  date: '2026-03-13'
+- breaking: false
+  highlights:
+  - Support for Azure Cloud
+  - Support custom domain configuration for AWS and Azure deployments
+  date: '2026-01-09'
+- breaking: false
+  highlights:
+  - Added onSuccessContinue hook to CreateTargetDataModel embeddable for custom actions after target data model creation
+  - Added onSuccessContinue hook to CreateConnector embeddable for custom actions after connector creation
+  - Renamed onComplete hook to onSuccessContinue in CreatePipeline embeddable for consistency
+  date: '2026-01-09'
+- breaking: false
+  highlights:
+  - Initial release 🚀
+  date: '2025-11-18'
+- breaking: false
+  highlights:
+  - Added showing unique badge in the column list of the TargetDataModelDetails embeddable if the column has a "unique" data validation rule
+  - Updated the TargetDataModelDetails embeddable to allow users to generate target data models from a file (CSV, XLSX)
+  - Updated the TargetDataModelDetails embeddable to allow users to generate target data models via text
+  - Updated the TargetDataModelDetails embeddable to allow users to generate options for category columns from a file (CSV, XLSX)
+  date: '2026-02-20'
+- breaking: false
+  highlights:
+  - Added prompt field to transformation modal in the CreatePipeline and ExecutionDetails embeddables to allow AI-generated formulas
+  - Added mapping configuration and data validation badges to column list view in TargetDataModelDetails embeddable
+  date: '2025-11-24'
+- breaking: false
+  highlights:
+  - Fixed timezone display to always show UTC time instead of German time in embeddables
+  - 'Added preview mode functionality to CreatePipeline and ExecutionDetails embeddables for improved performance when working with large datasets
+    (configurable via the new sampleSize setting, default: 10.000 rows)'
+  date: '2025-10-30'
+- breaking: false
+  highlights:
+  - Added Vanilla JS adapter support for DP embeddables with CDN and NPM distribution
+  - Added Angular adapter support for DP embeddables supporting Angular versions 18.x, 19.x, and 20.x
+  - Added unified package naming structure under the Ingestro brand across all environments
+  date: '2025-10-14'
+- breaking: false
+  highlights:
+  - Added dynamic option fetching functionality to TargetDataModelDetails embeddable
+  - Added data validation capabilities in the "Add column" modal in the TargetDataModelDetails embeddable
+  date: '2025-09-18'
+- breaking: false
+  highlights:
+  - Added new TargetDataModelList embeddable for viewing and managing target data models
+  - Added ConnectorDetails embeddable for viewing and editing connector configurations
+  date: '2025-08-21'
+- breaking: false
+  highlights:
+  - Added IAM role-based access
+  - Added Azure Blob Storage support & LLM provider support for OpenAI + GCP Vertex
+  date: '2026-01-09'
+- breaking: false
+  highlights:
+  - Added IAM role-based access
+  - Improved AI Prompt service
+  date: '2026-02-04'
+scheme: major.minor.patch
+current_version: 1.5.1
+docs: https://docs.ingestro.com/dp/release-notes/release-notes-self-hosted/

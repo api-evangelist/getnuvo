@@ -1,0 +1,18 @@
+generated: '2026-10-20'
+method: none
+source:
+- https://zapier.com/apps/getnuvo/integrations
+- https://zapier.com/apps/ingestro/integrations
+- https://n8n.io/integrations/getnuvo/
+- https://composio.dev/toolkits/getnuvo
+- https://monid.ai/tools/getnuvo
+checked:
+- https://composio.dev/toolkits/getnuvo
+- https://monid.ai/tools/getnuvo
+- https://n8n.io/integrations/getnuvo/
+- https://zapier.com/apps/getnuvo/integrations
+- https://zapier.com/apps/ingestro/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

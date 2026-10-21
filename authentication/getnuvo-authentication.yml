@@ -1,0 +1,19 @@
+generated: '2026-10-20'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.ingestro.com/dp/authentication-api/
+sources:
+- https://docs.ingestro.com/dp/authentication-api/
+description: The Ingestro pipeline API uses a license key to generate access tokens, which are then sent in the request header as a bearer token.
+schemes:
+- type: http-bearer
+  name: Access Token
+  evidence: All API requests should be made over HTTPS . API requests without authentication will fail.
+  location: header
+  header: access_token
+  token_url: https://api-gateway.ingestro.com/dp/api/v1/access/token
+  how_to_obtain: Generate an access token via a POST request to the token_url with a JSON body containing your license_key and an auth object
+    (identifier and type).
+note: The license key itself is sent in the request body when obtaining an access token; subsequent API calls use the returned access_token in
+  the header.
+docs: https://docs.ingestro.com/dp/authentication-api/

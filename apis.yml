@@ -1,23 +1,92 @@
 aid: getnuvo
+
 name: Ingestro
-description: 'Ingestro is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/688c600a3b1c552c4b8f2d2f/6abfa952293312d8fbb76561_ingestro-brand.png
+
+description: 'Ingestro provides an AI-powered platform that automates data operations for payroll and HR processes. It offers tools for data import, transformation, and integration, enabling companies to streamline customer data onboarding, manage data pipelines, and reduce manual effort. The solution includes a no‑code data pipeline builder, SDKs for developers, and customizable connectors, targeting enterprises seeking efficient, automated data workflows across HR and finance systems.'
+
 url: https://raw.githubusercontent.com/api-evangelist/getnuvo/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-20'
+
 modified: '2026-10-20'
+
 tags:
-- Company
-apis: []
+- AI
+- Data-Operations
+- Payroll
+- Automation
+- Integration
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: ChangeLog
+  url: changelog/getnuvo-changelog.yml
+- type: Compliance
+  url: https://ingestro.com/security
+- type: Authentication
+  url: authentication/getnuvo-authentication.yml
+- type: Hosts
+  url: hosts/getnuvo-hosts.yml
+- type: Vendors
+  url: vendors/getnuvo-vendors.yml
+- type: SDKs
+  url: packages/getnuvo-packages.yml
+- type: Packages
+  url: packages/getnuvo-packages.yml
+- type: TermsOfService
+  url: https://ingestro.com/terms-of-service
+- type: StatusPage
+  url: https://status.ingestro.com/
+- type: Security
+  url: https://ingestro.com/security
+- type: PrivacyPolicy
+  url: https://ingestro.com/privacy-policy
+- type: Pricing
+  url: https://ingestro.com/pricing
+- type: GettingStarted
+  url: https://ingestro.com/quickstart
+- type: Blog
+  url: https://ingestro.com/blog
+- type: Documentation
+  url: https://docs.ingestro.com/
+- type: TrustCenter
+  url: security/getnuvo-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/getnuvo-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/getnuvo-domain-security.yml
 - type: Website
-  url: https://getnuvo.com/
+  url: https://ingestro.com/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Docs site https://docs.ingestro.com returns errors and appears to be a JavaScript‑rendered portal with no accessible OpenAPI spec.
+  evidence:
+    - url: https://docs.ingestro.com
+      status: error
+  checked: '2026-10-20'
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 12
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
